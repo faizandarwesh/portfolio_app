@@ -2,20 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:portfolio_app/modules/projects/ui/projects_card.dart';
 
+import '../../../data/data.dart';
+
 class ProjectListingScreen extends StatelessWidget {
   const ProjectListingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final projects = greeting['projects'] as List<dynamic>;
+
     return Scaffold(
       backgroundColor: HexColor('#040416'),
-      body: const Padding(
-        padding:  EdgeInsets.only(top: 32),
-        child:  Column(
+      body: Padding(
+        padding: const EdgeInsets.only(top: 32),
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Text(
+            const Text(
               "Projects",
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -24,10 +28,23 @@ class ProjectListingScreen extends StatelessWidget {
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w700),
             ),
-            SizedBox(
+            const SizedBox(
               height: 32,
             ),
-            ProjectsCard(),
+            Expanded(
+              child: ListView.builder(
+                itemCount: projects.length,
+                itemBuilder: (context, index) {
+                  final project = projects[index];
+
+                  return ProjectsCard(
+                    title: project['title'],
+                    description: project['description'],
+                    imageUrl: project['image_url'],
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
