@@ -14,7 +14,7 @@ class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: HexColor('#040416'),
+      // backgroundColor: HexColor('#040416'),
       body: Stack(
         children: [
           Positioned.fill(
