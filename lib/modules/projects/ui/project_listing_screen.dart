@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:portfolio_app/modules/projects/ui/projects_card.dart';
 
 import '../../../data/data.dart';
@@ -12,7 +11,6 @@ class ProjectListingScreen extends StatelessWidget {
     final projects = greeting['projects'] as List<dynamic>;
 
     return Scaffold(
-      backgroundColor: HexColor('#040416'),
       body: Padding(
         padding: const EdgeInsets.only(top: 32),
         child: Column(
@@ -23,7 +21,6 @@ class ProjectListingScreen extends StatelessWidget {
               "Projects",
               textAlign: TextAlign.center,
               style: TextStyle(
-                  color: Colors.white,
                   fontSize: 30,
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w700),

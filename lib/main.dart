@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio_app/utils/theme/theme_config.dart';
+import 'package:portfolio_app/utils/theme/theme_provider.dart';
 import 'modules/home/ui/home_screen.dart';
 
 void main() {
@@ -18,16 +19,8 @@ class MyApp extends ConsumerWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: themeNotifier.isDarkMode
-          ? ThemeData(
-              colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-              useMaterial3: true,
-        scaffoldBackgroundColor: Colors.black,
-            )
-          : ThemeData(
-              colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-              useMaterial3: true,
-        scaffoldBackgroundColor: Colors.white,
-            ),
+          ? ThemeConfig().darkTheme
+          : ThemeConfig().lightTheme,
       home: const HomeScreen(),
     );
   }

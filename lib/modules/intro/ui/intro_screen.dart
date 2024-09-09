@@ -1,11 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:portfolio_app/utils/app_constants.dart';
 import 'package:portfolio_app/utils/helper_methods.dart';
-
 import '../../../data/data.dart';
 
 class IntroScreen extends StatelessWidget {
@@ -14,7 +12,6 @@ class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: HexColor('#040416'),
       body: Stack(
         children: [
           Positioned.fill(
@@ -36,8 +33,7 @@ class IntroScreen extends StatelessWidget {
               ),
               Text(
                 greeting['username'],
-                style: TextStyle(
-                    color: HexColor("#f9fafa"),
+                style: const TextStyle(
                     fontSize: 30,
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.w700),
@@ -52,7 +48,6 @@ class IntroScreen extends StatelessWidget {
                       designation,
                       speed: const Duration(milliseconds: 100),
                       textStyle: const TextStyle(
-                        color: Colors.white,
                         fontSize: 24.0,
                         fontFamily: 'Agne',
                       ),
@@ -75,7 +70,7 @@ class IntroScreen extends StatelessWidget {
                     width: 40,
                     height: 40,
                     colorFilter:
-                        const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+                         ColorFilter.mode( Theme.of(context).iconTheme.color!, BlendMode.srcIn),
                   )),
                   const SizedBox(
                     width: 16,
@@ -87,8 +82,8 @@ class IntroScreen extends StatelessWidget {
                     child: SvgPicture.asset('assets/icons/github_icon.svg',
                         width: 40,
                         height: 40,
-                        colorFilter: const ColorFilter.mode(
-                            Colors.white, BlendMode.srcIn)),
+                        colorFilter:  ColorFilter.mode(
+                            Theme.of(context).iconTheme.color!, BlendMode.srcIn)),
                   ),
                 ],
               )

@@ -28,7 +28,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: HexColor('#040416'),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         actions: const [
@@ -39,7 +38,6 @@ class _HomeScreenState extends State<HomeScreen> {
           'FD',
           style: TextStyle(
               fontSize: 24,
-              color: Colors.white,
               fontFamily: 'Agustina',
               fontWeight: FontWeight.w700),
         ),
@@ -54,27 +52,27 @@ class _HomeScreenState extends State<HomeScreen> {
           });
         },
         backgroundColor: Colors.transparent,
-        selectedItemColor: Theme.of(context).primaryColor,
-        unselectedItemColor: Theme.of(context).primaryColor,
-        items: const [
+        selectedItemColor: Colors.blue,
+        selectedIconTheme: const IconThemeData(color: Colors.blue),
+        items:  [
           BottomNavigationBarItem(
-            icon: Icon(Icons.emoji_people),
+            icon: Icon(Icons.emoji_people,color: Theme.of(context).iconTheme.color,),
             label: 'Intro',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.work),
+            icon: Icon(Icons.work,color: Theme.of(context).iconTheme.color),
             label: 'Projects',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.navigation_sharp),
+            icon: Icon(Icons.navigation_sharp,color: Theme.of(context).iconTheme.color),
             label: 'Journey',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.handyman),
+            icon: Icon(Icons.handyman,color: Theme.of(context).iconTheme.color),
             label: 'Skills',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: Icon(Icons.person,color: Theme.of(context).iconTheme.color),
             label: 'Contact',
           ),
         ],

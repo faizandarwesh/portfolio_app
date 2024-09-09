@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../utils/theme/theme_config.dart';
+import '../../../utils/theme/theme_provider.dart';
 
 class ThemeToggleButton extends ConsumerWidget {
   const ThemeToggleButton({super.key});
@@ -15,7 +15,6 @@ class ThemeToggleButton extends ConsumerWidget {
     return IconButton(
       icon: Icon(
         themeNotifier.isDarkMode ? Icons.dark_mode : Icons.wb_sunny,
-        color: Colors.white,
         size: 30,
       ),
       onPressed: () {
