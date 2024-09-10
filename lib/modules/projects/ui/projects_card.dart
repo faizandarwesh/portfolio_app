@@ -73,31 +73,6 @@ class ProjectsCard extends ConsumerWidget {
               const SizedBox(
                 height: 20,
               ),
-              /*ElevatedButton(
-                onPressed: () {
-                  // Logic to add to cart can be added here
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Theme.of(context).primaryColor,
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 15,
-                    horizontal: 20,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-                child: const Text(
-                  'Look it up',
-                  style:  TextStyle(
-                      fontSize: 14,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w400),
-                ),
-              ),*/
-              const SizedBox(
-                height: 16,
-              ),
             ],
           ),
         ),

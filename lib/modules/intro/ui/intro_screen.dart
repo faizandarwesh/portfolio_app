@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:portfolio_app/utils/app_constants.dart';
 import 'package:portfolio_app/utils/helper_methods.dart';
 import '../../../data/data.dart';
+import '../../../utils/theme/social_icons_widget.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
@@ -58,35 +59,7 @@ class IntroScreen extends StatelessWidget {
               const SizedBox(
                 height: 32,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  GestureDetector(
-                      onTap : (){
-                        HelperMethods.launchBrowser(AppConstants.linkedinUrl);
-                      },
-                      child: SvgPicture.asset(
-                    'assets/icons/linkedin_icon.svg',
-                    width: 40,
-                    height: 40,
-                    colorFilter:
-                         ColorFilter.mode( Theme.of(context).iconTheme.color!, BlendMode.srcIn),
-                  )),
-                  const SizedBox(
-                    width: 16,
-                  ),
-                  GestureDetector(
-                    onTap : (){
-                      HelperMethods.launchBrowser(AppConstants.githubUrl);
-                    },
-                    child: SvgPicture.asset('assets/icons/github_icon.svg',
-                        width: 40,
-                        height: 40,
-                        colorFilter:  ColorFilter.mode(
-                            Theme.of(context).iconTheme.color!, BlendMode.srcIn)),
-                  ),
-                ],
-              )
+              const SocialIconsWidget()
             ],
           )),
         ],
@@ -94,3 +67,5 @@ class IntroScreen extends StatelessWidget {
     );
   }
 }
+
+

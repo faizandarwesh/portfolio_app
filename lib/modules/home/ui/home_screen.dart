@@ -52,8 +52,8 @@ class _HomeScreenState extends State<HomeScreen> {
           });
         },
         backgroundColor: Colors.transparent,
-        selectedItemColor: Colors.blue,
-        selectedIconTheme: const IconThemeData(color: Colors.blue),
+        selectedItemColor: Theme.of(context).primaryColor,
+        selectedIconTheme: const IconThemeData(color: Colors.purple),
         items:  [
           BottomNavigationBarItem(
             icon: Icon(Icons.emoji_people,color: Theme.of(context).iconTheme.color,),

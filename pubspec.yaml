@@ -43,6 +43,8 @@ dependencies:
   flutter_riverpod: ^2.5.1
   firebase_core: ^2.24.2
   firebase_analytics: ^10.8.0
+  email_validator: ^3.0.0
+  flutter_email_sender: ^6.0.3
 
 
 dev_dependencies:
