@@ -31,8 +31,28 @@
 
   <title>portfolio_app</title>
   <link rel="manifest" href="manifest.json">
+
+  <style>
+    .container {
+        margin: 0;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loader {
+        height: 30vh;
+    }
+  </style>
+
 </head>
 <body>
+<div class="container">
+  <img class="loader" src="../assets/gif/loading.gif" />
+</div>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
