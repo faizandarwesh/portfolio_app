@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_app/modules/projects/ui/project_detail_screen.dart';
-import 'package:portfolio_app/modules/projects/ui/projects_card.dart';
-
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:portfolio_app/modules/projects/ui/project_detail_card.dart';
 import '../../../data/data.dart';
 
 class ProjectListingScreen extends StatelessWidget {
@@ -9,6 +8,7 @@ class ProjectListingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     final projects = greeting['projects'] as List<dynamic>;
 
     return Scaffold(
@@ -30,6 +30,28 @@ class ProjectListingScreen extends StatelessWidget {
               height: 32,
             ),
             Expanded(
+              child: MasonryGridView.builder(
+                gridDelegate:
+                    const SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2, // Number of columns
+                ),
+                itemCount: projects.length,
+                itemBuilder: (context, index) {
+                  final project = projects[index];
+                  return InkWell(
+                    child: ProjectDetailCard(
+                        title: project['title'],
+                        imageUrl: project['image_url'],
+                        backgroundImageUrl: project['background_image_url'],
+                        rating: project['rating']),
+                  );
+                },
+                mainAxisSpacing: 8.0,
+                crossAxisSpacing: 8.0,
+              ),
+            ),
+
+            /*  Expanded(
               child: ListView.builder(
                 itemCount: projects.length,
                 itemBuilder: (context, index) {
@@ -47,7 +69,7 @@ class ProjectListingScreen extends StatelessWidget {
                   );
                 },
               ),
-            ),
+            ),*/
           ],
         ),
       ),
