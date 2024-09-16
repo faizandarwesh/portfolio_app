@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:flutter/material.dart';
@@ -37,7 +38,6 @@ class ProjectDetailScreen extends StatelessWidget {
                   colors: [Colors.transparent, Colors.black87],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  stops: [0.5, 1.0],
                 ),
               ),
             ),
@@ -49,7 +49,9 @@ class ProjectDetailScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(height: 400), // Space for the image
+                  SizedBox(
+                      height: MediaQuery.sizeOf(context).height /
+                          2), // Space for the image
                   // Title
                   Text(
                     title,
@@ -63,10 +65,10 @@ class ProjectDetailScreen extends StatelessWidget {
                   // Description
                   Text(
                     'This project is a fully-featured application that allows users to experience a wide range of functionalities. '
-                        'The app offers a rich user interface with smooth animations and transitions. The goal of the app is to provide an exceptional user experience.'
-                        '\n\n'
-                        'The project also supports real-time data synchronization with cloud services, ensuring data integrity and faster responses. '
-                        'With a modern tech stack, this app can scale efficiently and manage large amounts of data.',
+                    'The app offers a rich user interface with smooth animations and transitions. The goal of the app is to provide an exceptional user experience.'
+                    '\n\n'
+                    'The project also supports real-time data synchronization with cloud services, ensuring data integrity and faster responses. '
+                    'With a modern tech stack, this app can scale efficiently and manage large amounts of data.',
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.9),
                       fontSize: 16,
@@ -93,61 +95,81 @@ class ProjectDetailScreen extends StatelessWidget {
                     runSpacing: 4,
                     children: [
                       Chip(
-                        label: Text('Flutter'),
+                        label: Text(
+                          'Flutter',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                         shape: StadiumBorder(), // Rounded shape
                       ),
                       Chip(
-                        label: Text('Dart'),
+                        label: Text(
+                          'Dart',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                         shape: StadiumBorder(), // Rounded shape
                       ),
                       Chip(
-                        label: Text('Firebase'),
+                        label: Text(
+                          'Firebase',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                         shape: StadiumBorder(), // Rounded shape
                       ),
                       Chip(
-                        label: Text('REST API'),
+                        label: Text(
+                          'REST API',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                         shape: StadiumBorder(), // Rounded shape
                       ),
                       Chip(
-                        label: Text('Google Cloud'),
+                        label: Text(
+                          'Google Cloud',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                         shape: StadiumBorder(), // Rounded shape
                       ),
                       Chip(
-                        label: Text('Hive DB'),
+                        label: Text(
+                          'Hive DB',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                         shape: StadiumBorder(), // Rounded shape
                       ),
                     ],
                   ),
 
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 30),
                   // Play Store & App Store Buttons
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      ElevatedButton.icon(
-                        onPressed: () {
-                          // Play Store button action
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.green,
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 20, vertical: 10),
-                        ),
-                        icon: const Icon(Icons.android),
-                        label: const Text('Play Store'),
-                      ),
-                      ElevatedButton.icon(
-                        onPressed: () {
-                          // App Store button action
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.blue,
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 20, vertical: 10),
-                        ),
-                        icon: const Icon(Icons.apple),
-                        label: const Text('App Store'),
-                      ),
+                      SvgPicture.asset('assets/icons/app_store.svg'),
+                      SvgPicture.asset('assets/icons/play_store.svg')
                     ],
                   ),
                   const SizedBox(height: 50),
