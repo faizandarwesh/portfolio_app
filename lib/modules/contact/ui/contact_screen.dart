@@ -32,13 +32,13 @@ class _ContactScreenState extends State<ContactScreen> {
 
       try {
         await FlutterEmailSender.send(email);
-        ScaffoldMessenger.of(context).showSnackBar(
+       /* ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Message sent successfully!')),
-        );
+        );*/
       } catch (error) {
-        ScaffoldMessenger.of(context).showSnackBar(
+      /*  ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Failed to send message. Please try again.')),
-        );
+        );*/
       } finally {
         setState(() {
           _isSending = false;

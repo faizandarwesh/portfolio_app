@@ -1,9 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:portfolio_app/utils/app_constants.dart';
-import 'package:portfolio_app/utils/helper_methods.dart';
 import '../../../data/data.dart';
 import '../../../utils/theme/social_icons_widget.dart';
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:portfolio_app/modules/home/app_drawer.dart';
 import 'package:portfolio_app/modules/intro/ui/intro_screen.dart';
-
 import '../../contact/ui/contact_screen.dart';
 import '../../journey/ui/journey_listing_screen.dart';
 import '../../projects/ui/project_listing_screen.dart';
@@ -17,6 +18,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
 
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
   final List<Widget> _screens = [
     const IntroScreen(),
     const ProjectListingScreen(),
@@ -28,7 +31,18 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
+      drawer: const AppDrawer(),
       appBar: AppBar(
+        leading: IconButton(
+            onPressed: () {
+              _scaffoldKey.currentState?.openDrawer();
+            },
+            icon: SvgPicture.asset('assets/icons/menu.svg',
+                width: 24,
+                height: 24,
+                colorFilter: ColorFilter.mode(
+                    Theme.of(context).iconTheme.color!, BlendMode.srcIn))),
         backgroundColor: Colors.transparent,
         actions: const [
           ThemeToggleButton(),
@@ -54,25 +68,30 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
         selectedItemColor: Theme.of(context).primaryColor,
         selectedIconTheme: const IconThemeData(color: Colors.purple),
-        items:  [
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.emoji_people,color: Theme.of(context).iconTheme.color,),
+            icon: Icon(
+              Icons.emoji_people,
+              color: Theme.of(context).iconTheme.color,
+            ),
             label: 'Intro',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.work,color: Theme.of(context).iconTheme.color),
+            icon: Icon(Icons.work, color: Theme.of(context).iconTheme.color),
             label: 'Projects',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.navigation_sharp,color: Theme.of(context).iconTheme.color),
+            icon: Icon(Icons.navigation_sharp,
+                color: Theme.of(context).iconTheme.color),
             label: 'Journey',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.handyman,color: Theme.of(context).iconTheme.color),
+            icon:
+                Icon(Icons.handyman, color: Theme.of(context).iconTheme.color),
             label: 'Skills',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person,color: Theme.of(context).iconTheme.color),
+            icon: Icon(Icons.person, color: Theme.of(context).iconTheme.color),
             label: 'Contact',
           ),
         ],

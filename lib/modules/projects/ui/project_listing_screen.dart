@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_app/modules/projects/ui/project_detail_screen.dart';
 import 'package:portfolio_app/modules/projects/ui/projects_card.dart';
 
 import '../../../data/data.dart';
@@ -34,10 +35,15 @@ class ProjectListingScreen extends StatelessWidget {
                 itemBuilder: (context, index) {
                   final project = projects[index];
 
-                  return ProjectsCard(
-                    title: project['title'],
-                    description: project['description'],
-                    imageUrl: project['image_url'],
+                  return InkWell(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const ProjectDetailScreen()));
+                    },
+                    child: ProjectsCard(
+                      title: project['title'],
+                      description: project['description'],
+                      imageUrl: project['image_url'],
+                    ),
                   );
                 },
               ),
