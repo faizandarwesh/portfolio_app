@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
-
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ProjectDetailScreen extends StatelessWidget {
   final String backgroundImageUrl;
   final String title;
+  final String description;
 
   const ProjectDetailScreen({
-    Key? key,
+    super.key,
     required this.backgroundImageUrl,
     required this.title,
-  }) : super(key: key);
+    required this.description
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -55,20 +53,15 @@ class ProjectDetailScreen extends StatelessWidget {
                   // Title
                   Text(
                     title,
-                    style: GoogleFonts.pacifico(
-                      color: Colors.white,
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: const TextStyle(
+                        fontSize: 32,
+                        fontFamily: 'Pacifico',
+                        fontWeight: FontWeight.w700),
                   ),
                   const SizedBox(height: 20),
                   // Description
                   Text(
-                    'This project is a fully-featured application that allows users to experience a wide range of functionalities. '
-                    'The app offers a rich user interface with smooth animations and transitions. The goal of the app is to provide an exceptional user experience.'
-                    '\n\n'
-                    'The project also supports real-time data synchronization with cloud services, ensuring data integrity and faster responses. '
-                    'With a modern tech stack, this app can scale efficiently and manage large amounts of data.',
+                    description,
                     style: TextStyle(
                       color: Colors.white.withOpacity(0.9),
                       fontSize: 16,
@@ -79,12 +72,12 @@ class ProjectDetailScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 30),
                   // Tech Stack Heading
-                  Text(
+                  const Text(
                     'Tech Stack',
-                    style: GoogleFonts.pacifico(
-                      color: Colors.white,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                    style: TextStyle(
+                        fontSize: 24,
+                        fontFamily: 'Pacifico',
+                        fontWeight: FontWeight.w700
                     ),
                   ),
                   const SizedBox(height: 10),

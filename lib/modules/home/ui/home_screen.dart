@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:portfolio_app/modules/home/app_drawer.dart';
 import 'package:portfolio_app/modules/intro/ui/intro_screen.dart';
-import 'package:portfolio_app/modules/projects/ui/project_detail_card.dart';
 import '../../contact/ui/contact_screen.dart';
 import '../../journey/ui/journey_listing_screen.dart';
 import '../../projects/ui/project_listing_screen.dart';

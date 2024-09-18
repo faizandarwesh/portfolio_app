@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_app/modules/projects/ui/project_detail_screen.dart';
 
-class ProjectDetailCard extends StatelessWidget {
+class ProjectListingCard extends StatelessWidget {
   final String title;
+  final String description;
   final String imageUrl;
   final String backgroundImageUrl;
   final String rating;
 
-  const ProjectDetailCard({
+  const ProjectListingCard({
     required this.title,
+    required this.description,
     required this.imageUrl,
     required this.backgroundImageUrl,
     required this.rating,
@@ -32,6 +33,7 @@ class ProjectDetailCard extends StatelessWidget {
                   builder: (context) => ProjectDetailScreen(
                         backgroundImageUrl: backgroundImageUrl,
                         title: title,
+                        description: description,
                       )));
         },
         child: Stack(
@@ -70,14 +72,11 @@ class ProjectDetailCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      title,
-                      style: GoogleFonts.pacifico(
-                        color: Colors.white,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+                    Text(title,
+                        style: const TextStyle(
+                            fontSize: 24,
+                            fontFamily: 'Pacifico',
+                            fontWeight: FontWeight.w700)),
                     const SizedBox(height: 8),
                     Row(
                       children: [
