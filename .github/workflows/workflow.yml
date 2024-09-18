@@ -65,7 +65,7 @@ jobs:
       - run: flutter build web --release
 
       - name: Upload web build artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: web-build
           path: build/web
