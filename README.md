@@ -58,12 +58,16 @@ Welcome to the Portfolio App! This project showcases my skills, projects, and ac
 
 ## Screenshots
 
-![Dark Mode](screenshots/dark_mode.png)
+<!--![Dark Mode](screenshots/dark_mode.png)
 ![Light Mode](screenshots/light_mode.png)
+-->
+COMING SOON!
 
 ## Demo
 
-Check out the app in action: [Watch Demo](https://www.youtube.com/watch?v=yourvideolink)
+<!--! Check out the app in action: [Watch Demo](https://www.youtube.com/watch?v=yourvideolink) --->
+
+COMING SOON!
 
 ## Contributing
 
