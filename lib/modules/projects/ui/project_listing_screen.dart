@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:portfolio_app/modules/projects/ui/project_detail_card.dart';
+import 'package:portfolio_app/modules/projects/ui/project_listing_card.dart';
 import '../../../data/data.dart';
 
 class ProjectListingScreen extends StatelessWidget {
@@ -39,8 +39,9 @@ class ProjectListingScreen extends StatelessWidget {
                 itemBuilder: (context, index) {
                   final project = projects[index];
                   return InkWell(
-                    child: ProjectDetailCard(
+                    child: ProjectListingCard(
                         title: project['title'],
+                        description: project['description'],
                         imageUrl: project['image_url'],
                         backgroundImageUrl: project['background_image_url'],
                         rating: project['rating']),
