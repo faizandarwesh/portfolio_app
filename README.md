@@ -58,6 +58,13 @@ Welcome to the Portfolio App! This project showcases my skills, projects, and ac
 
 ## Screenshots
 
+<p align="center">
+  <img src="screenshots/home.png" alt="Home Screen" width="30%" style="margin-right: 10px;">
+  <img src="screenshots/project1.png" alt="Project Listing Screen" width="30%" style="margin-right: 10px;">
+  <img src="screenshots/project2.png" alt="Project Listing Screen" width="30%" style="margin-right: 10px;">
+ 
+</p>
+
 <!--![Dark Mode](screenshots/dark_mode.png)
 ![Light Mode](screenshots/light_mode.png)
 -->
