@@ -7,6 +7,7 @@ class ProjectListingCard extends StatelessWidget {
   final String imageUrl;
   final String backgroundImageUrl;
   final String rating;
+  final dynamic project;
 
   const ProjectListingCard({
     required this.title,
@@ -14,6 +15,7 @@ class ProjectListingCard extends StatelessWidget {
     required this.imageUrl,
     required this.backgroundImageUrl,
     required this.rating,
+    required this.project,
     super.key,
   });
 
@@ -31,6 +33,7 @@ class ProjectListingCard extends StatelessWidget {
               context,
               MaterialPageRoute(
                   builder: (context) => ProjectDetailScreen(
+                        project: project,
                         backgroundImageUrl: backgroundImageUrl,
                         title: title,
                         description: description,
@@ -75,7 +78,7 @@ class ProjectListingCard extends StatelessWidget {
                     Text(title,
                         style: const TextStyle(
                             fontSize: 24,
-                            fontFamily: 'Pacifico',
+                            fontFamily: 'Poppins',
                             fontWeight: FontWeight.w700)),
                     const SizedBox(height: 8),
                     Row(

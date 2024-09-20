@@ -15,6 +15,21 @@ final Map<String, dynamic> greeting = {
               "\n \n Our AI-powered app is tailored to help you discover top-rated products and services that make your home smarter, more comfortable, and cost-effective. With Hey Smarty, you’ll save both time and money while enjoying a seamless experience in creating the perfect living space. \n \n Let Hey Smarty guide you to the best choices for a home you’ll love.",
       "image_url": "assets/images/bitereel.png",
       'rating': '4.8',
+      'mockups': {
+        "ios": [
+          'assets/images/mockups/ios/HeySmarty-screen1.png',
+          'assets/images/mockups/ios/HeySmarty-screen2.png',
+          'assets/images/mockups/ios/HeySmarty-screen3.png',
+          'assets/images/mockups/ios/HeySmarty-screen4.png',
+          'assets/images/mockups/ios/HeySmarty-screen5.png',
+          'assets/images/mockups/ios/HeySmarty-screen6.png',
+          'assets/images/mockups/ios/HeySmarty-screen7.png',
+          'assets/images/mockups/ios/HeySmarty-screen8.png',
+          'assets/images/mockups/ios/HeySmarty-screen9.png',
+          'assets/images/mockups/ios/HeySmarty-screen10.png',
+          'assets/images/mockups/ios/HeySmarty-screen11.png',
+        ]
+      },
       "background_image_url":
           "https://plus.unsplash.com/premium_photo-1677094310956-7f88ae5f5c6b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
@@ -50,6 +65,30 @@ Our innovative and tailored clothing recovery programs not only reduce waste, bu
 """,
       "image_url": "assets/images/nutriwest.png",
       'rating': '3.2',
+      'mockups': {
+        "android": [
+          'assets/images/mockups/android/nutriwest1.png',
+          'assets/images/mockups/android/nutriwest2.png',
+          'assets/images/mockups/android/nutriwest3.png',
+          'assets/images/mockups/android/nutriwest4.png',
+          'assets/images/mockups/android/nutriwest5.png',
+          'assets/images/mockups/android/nutriwest6.png',
+          'assets/images/mockups/android/nutriwest7.png',
+          'assets/images/mockups/android/nutriwest8.png',
+          'assets/images/mockups/android/nutriwest9.png',
+        ],
+        "ios": [
+          'assets/images/mockups/ios/nutriwest1.png',
+          'assets/images/mockups/ios/nutriwest2.png',
+          'assets/images/mockups/ios/nutriwest3.png',
+          'assets/images/mockups/ios/nutriwest4.png',
+          'assets/images/mockups/ios/nutriwest5.png',
+          'assets/images/mockups/ios/nutriwest6.png',
+          'assets/images/mockups/ios/nutriwest7.png',
+          'assets/images/mockups/ios/nutriwest8.png',
+          'assets/images/mockups/ios/nutriwest9.png',
+        ]
+      },
       "background_image_url":
           "https://plus.unsplash.com/premium_photo-1671721439617-491242a0507f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNpbmVzJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D",
     },
@@ -106,6 +145,22 @@ Our innovative and tailored clothing recovery programs not only reduce waste, bu
           """Portfolio App using Flutter is a beautifully crafted app that showcases my personal portfolio, including my skills, projects, and achievements.\n \n  Designed with a clean UI and smooth animations, it provides an interactive and engaging experience for users to explore my work. The app highlights key sections such as projects I've completed, my technical skills, and personal information, all customized to reflect my personal brand. \n \n It's the perfect tool for presenting my expertise and professional journey in a visually appealing and user-friendly format.""",
       "image_url": "assets/images/project_image2.png",
       'rating': '3.8',
+      'mockups': {
+        "android": [
+          'assets/images/mockups/android/portfolio1.jpeg',
+          'assets/images/mockups/android/portfolio2.jpeg',
+          'assets/images/mockups/android/portfolio3.jpeg',
+          'assets/images/mockups/android/portfolio4.jpeg',
+          'assets/images/mockups/android/portfolio5.jpeg'
+        ],
+        "ios": [
+          'assets/images/mockups/ios/portfolio1.jpeg',
+          'assets/images/mockups/ios/portfolio2.jpeg',
+          'assets/images/mockups/ios/portfolio3.jpeg',
+          'assets/images/mockups/ios/portfolio4.jpeg',
+          'assets/images/mockups/ios/portfolio5.jpeg'
+        ]
+      },
       "background_image_url":
           "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
@@ -141,6 +196,26 @@ Our innovative and tailored clothing recovery programs not only reduce waste, bu
       "title": "Firebase",
       "image_url": "assets/icons/firebase.png",
     },
+  ],
+  'journey': [
+    {
+      "title": "Software Developer - Tier 3",
+      "image": "assets/icons/flutter.png",
+      "duration": "Edvolve  Jan 2023 - Jan 2024",
+      "role": "Building and managing interactive frontend UIs using React and Next.js. Integrating with backend APIs and services to fetch and manipulate data. Participating in client meetings to gather requirements, provide updates,and address feedback."
+    },
+    {
+      "title": "Software Developer - Tier 1",
+      "image": "assets/icons/android.png",
+      "duration": "Edvolve  Jan 2023 - Jan 2024",
+      "role": "Designed and developed 2 web applications from scratch using React and its ecosystem. Coordinated directly with the founding team to plan the roadmap and prioritize feature development. Participated in sprint planning and agile ceremonies to deliver features in iterative cycles."
+    },
+    {
+      "title": "Trainee Software Developer",
+      "image": "assets/icons/git.png",
+      "duration": "Edvolve  Jan 2023 - Jan 2024",
+      "role": "Transforming high-quality Figma designs into responsive web pages using React and it's ecosystem. Integrated with backend APIs and services to fetch and manage data effectively. Stayed updated with industry trends and best practices to drive innovation and product excellence."
+    }
   ],
   'aboutMe':
       'A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with Flutter and Native Android Platform and some other cool libraries and frameworks.',

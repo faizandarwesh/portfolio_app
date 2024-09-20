@@ -1,27 +1,57 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
+import 'package:portfolio_app/modules/journey/ui/journey_card_widget.dart';
+import '../../../data/data.dart';
 
 class JourneyListingScreen extends StatelessWidget {
   const JourneyListingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-            child: Text(
-              "JOURNEY",
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
-            ),
+    final journey = greeting['journey'] as List<dynamic>;
+
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.only(top: 32),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const Text(
+                "Journey",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 30,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w700),
+              ),
+              const SizedBox(
+                height: 32,
+              ),
+              Center(
+                child: Lottie.asset('assets/raw/working_developer.json',
+                    height: 350),
+              ),
+              const SizedBox(
+                height: 16,
+              ),
+              ListView.builder(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                itemCount: journey.length,
+                itemBuilder: (BuildContext context, int index) {
+                  final data = journey[index];
+
+                  return JourneyCardWidget(
+                    journey: data,
+                  );
+                },
+              )
+            ],
           ),
-          Center(
-            child: Text(
-              "COMING SOON!!!",
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
-            ),
-          )
-        ],
+        ),
       ),
     );
   }

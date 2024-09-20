@@ -40,6 +40,7 @@ class ProjectListingScreen extends StatelessWidget {
                   final project = projects[index];
                   return InkWell(
                     child: ProjectListingCard(
+                        project: project,
                         title: project['title'],
                         description: project['description'],
                         imageUrl: project['image_url'],
@@ -51,26 +52,6 @@ class ProjectListingScreen extends StatelessWidget {
                 crossAxisSpacing: 8.0,
               ),
             ),
-
-            /*  Expanded(
-              child: ListView.builder(
-                itemCount: projects.length,
-                itemBuilder: (context, index) {
-                  final project = projects[index];
-
-                  return InkWell(
-                    onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const ProjectDetailScreen()));
-                    },
-                    child: ProjectsCard(
-                      title: project['title'],
-                      description: project['description'],
-                      imageUrl: project['image_url'],
-                    ),
-                  );
-                },
-              ),
-            ),*/
           ],
         ),
       ),

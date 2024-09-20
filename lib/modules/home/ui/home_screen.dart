@@ -39,8 +39,8 @@ class _HomeScreenState extends State<HomeScreen> {
               _scaffoldKey.currentState?.openDrawer();
             },
             icon: SvgPicture.asset('assets/icons/menu.svg',
-                width: 24,
-                height: 24,
+                width: 20,
+                height: 20,
                 colorFilter: ColorFilter.mode(
                     Theme.of(context).iconTheme.color!, BlendMode.srcIn))),
         backgroundColor: Colors.transparent,
