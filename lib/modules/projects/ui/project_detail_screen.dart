@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:portfolio_app/modules/projects/ui/project_mockup_screen.dart';
 
 class ProjectDetailScreen extends StatelessWidget {
   final String backgroundImageUrl;
@@ -98,9 +99,20 @@ class ProjectDetailScreen extends StatelessWidget {
                                   itemBuilder: (context, index) {
                                     final image = project['mockups']
                                         ['android'][index];
-                                    return Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Image.asset(image),
+                                    return GestureDetector(
+                                      onTap: (){
+                                        showDialog(
+                                            context: context,
+                                            builder: (BuildContext context) {
+                                              return  ProjectMockupScreen(
+                                                imageUrl: image,
+                                              );
+                                            });
+                                      },
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Image.asset(image),
+                                      ),
                                     );
                                   },
                                 ),
@@ -127,9 +139,20 @@ class ProjectDetailScreen extends StatelessWidget {
                                   itemBuilder: (context, index) {
                                     final image = project['mockups']
                                         ['ios'][index];
-                                    return Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Image.asset(image),
+                                    return GestureDetector(
+                                      onTap: (){
+                                        showDialog(
+                                            context: context,
+                                            builder: (BuildContext context) {
+                                              return  ProjectMockupScreen(
+                                                imageUrl: image,
+                                              );
+                                            });
+                                      },
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Image.asset(image),
+                                      ),
                                     );
                                   },
                                 ),
