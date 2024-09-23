@@ -20,7 +20,7 @@ class MyApp extends ConsumerWidget {
       title: 'Flutter Demo',
       theme: themeNotifier.isDarkMode
           ? ThemeConfig().darkTheme
-          : ThemeConfig().darkTheme,
+          : ThemeConfig().lightTheme,
       home: const HomeScreen(),
     );
   }

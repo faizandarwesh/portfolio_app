@@ -199,21 +199,43 @@ Our innovative and tailored clothing recovery programs not only reduce waste, bu
   ],
   'journey': [
     {
-      "title": "Software Developer - Tier 3",
-      "image": "assets/icons/flutter.png",
-      "duration": "Edvolve  Jan 2023 - Jan 2024",
+      "designation": "Software Developer - Tier 3",
+       "from" : "2023",
+       "to" : "2024",
+       "type" : "On-site",
+       "organization" : "Genetech Solutions",
+      "location": "Karachi, Pakistan",
+      "logo": "https://www.genetechsolutions.com//public/frontend/images/logo.png",
       "role": "Building and managing interactive frontend UIs using React and Next.js. Integrating with backend APIs and services to fetch and manipulate data. Participating in client meetings to gather requirements, provide updates,and address feedback."
     },
     {
-      "title": "Software Developer - Tier 1",
-      "image": "assets/icons/android.png",
-      "duration": "Edvolve  Jan 2023 - Jan 2024",
+      "designation": "Software Developer - Tier 2",
+      "from" : "2022",
+      "to" : "2023",
+      "type" : "On-site",
+      "organization" : "Genetech Solutions",
+      "location": "Karachi, Pakistan",
+      "logo": "https://www.genetechsolutions.com//public/frontend/images/logo.png",
       "role": "Designed and developed 2 web applications from scratch using React and its ecosystem. Coordinated directly with the founding team to plan the roadmap and prioritize feature development. Participated in sprint planning and agile ceremonies to deliver features in iterative cycles."
     },
     {
-      "title": "Trainee Software Developer",
-      "image": "assets/icons/git.png",
-      "duration": "Edvolve  Jan 2023 - Jan 2024",
+      "designation": "Software Developer - Tier 1",
+      "from" : "2021",
+      "to" : "2022",
+      "type" : "On-site",
+      "organization" : "Genetech Solutions",
+      "location": "Karachi, Pakistan",
+      "logo": "https://www.genetechsolutions.com//public/frontend/images/logo.png",
+      "role": "Designed and developed 2 web applications from scratch using React and its ecosystem. Coordinated directly with the founding team to plan the roadmap and prioritize feature development. Participated in sprint planning and agile ceremonies to deliver features in iterative cycles."
+    },
+    {
+      "designation": "Trainee Software Developer",
+      "from" : "2019",
+      "to" : "2021",
+      "type" : "On-site",
+      "organization" : "Genetech Solutions",
+      "location": "Karachi, Pakistan",
+      "logo": "https://www.genetechsolutions.com//public/frontend/images/logo.png",
       "role": "Transforming high-quality Figma designs into responsive web pages using React and it's ecosystem. Integrated with backend APIs and services to fetch and manage data effectively. Stayed updated with industry trends and best practices to drive innovation and product excellence."
     }
   ],

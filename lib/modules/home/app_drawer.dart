@@ -28,7 +28,6 @@ class CustomDrawer extends StatelessWidget {
                 color: Colors.transparent, // No background color
               ),
             ),
-
             // Drawer Menu Items
             ListTile(
               leading: const Icon(Icons.home, color: Colors.white),
