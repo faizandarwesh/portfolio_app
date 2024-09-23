@@ -15,6 +15,7 @@ class ThemeToggleButton extends ConsumerWidget {
     return IconButton(
       icon: Icon(
         themeNotifier.isDarkMode ? Icons.dark_mode : Icons.wb_sunny,
+        color: const Color(0xFF6750A4),
         size: 30,
       ),
       onPressed: () {

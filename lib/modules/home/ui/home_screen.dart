@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         backgroundColor: Colors.transparent,
         selectedItemColor: Theme.of(context).primaryColor,
-        selectedIconTheme: const IconThemeData(color: Colors.purple),
+        selectedIconTheme: const IconThemeData(color: Color(0xFF6750A4)),
         items: [
           BottomNavigationBarItem(
             icon: Icon(

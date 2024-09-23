@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class JourneyCardWidget extends StatelessWidget {
   final dynamic journey;
@@ -14,11 +15,11 @@ class JourneyCardWidget extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Column(
+          const Column(
             children: [
               Icon(
                 Icons.circle,
-                color: Theme.of(context).primaryColor,
+                color: Color(0xFF6750A4),
               ),
               SizedBox(
                 height: 100,
@@ -26,7 +27,7 @@ class JourneyCardWidget extends StatelessWidget {
                   width: 2,
                   indent: 10,
                   endIndent: 10,
-                  color: Theme.of(context).primaryColor,
+                  color: Color(0xFF6750A4),
                 ),
               ),
             ],
@@ -83,28 +84,8 @@ class JourneyCardWidget extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 10,),
-          Image.network(
+          SvgPicture.asset(
             journey['logo'],
-            loadingBuilder: (BuildContext context, Widget child,
-                ImageChunkEvent? loadingProgress) {
-              if (loadingProgress == null) {
-                return child; // When the image is fully loaded
-              } else {
-                return Center(
-                  child: CircularProgressIndicator(
-                    value: loadingProgress.expectedTotalBytes != null
-                        ? loadingProgress.cumulativeBytesLoaded /
-                        (loadingProgress.expectedTotalBytes ?? 1)
-                        : null,
-                  ),
-                );
-              }
-            },
-            errorBuilder: (BuildContext context, Object exception,
-                StackTrace? stackTrace) {
-              return const Center(
-                  child: Icon(Icons.error)); // If image fails to load
-            },
             height: 50,
             width: 50,
             fit: BoxFit.contain,

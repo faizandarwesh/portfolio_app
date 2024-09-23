@@ -44,7 +44,7 @@ class SkillListingScreen extends StatelessWidget {
             textAlign: TextAlign.center,
             style: theme.textTheme.headlineSmall!.copyWith(
                 fontWeight: FontWeight.bold,
-                color: theme.primaryColor,
+                color: const Color(0xFF6750A4),
                 fontSize: 24
             ),),
             Expanded(

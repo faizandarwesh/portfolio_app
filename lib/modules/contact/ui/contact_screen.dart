@@ -42,7 +42,7 @@ class _ContactScreenState extends State<ContactScreen> {
               'Get in Touch',
               style: theme.textTheme.headlineSmall!.copyWith(
                 fontWeight: FontWeight.bold,
-                color: theme.primaryColor,
+                color: const Color(0xFF6750A4),
               ),
             ),
             const SizedBox(height: 20),

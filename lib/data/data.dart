@@ -205,7 +205,7 @@ Our innovative and tailored clothing recovery programs not only reduce waste, bu
        "type" : "On-site",
        "organization" : "Genetech Solutions",
       "location": "Karachi, Pakistan",
-      "logo": "https://www.genetechsolutions.com//public/frontend/images/logo.png",
+      "logo": "assets/icons/genetech.svg",
       "role": "Building and managing interactive frontend UIs using React and Next.js. Integrating with backend APIs and services to fetch and manipulate data. Participating in client meetings to gather requirements, provide updates,and address feedback."
     },
     {
@@ -215,7 +215,7 @@ Our innovative and tailored clothing recovery programs not only reduce waste, bu
       "type" : "On-site",
       "organization" : "Genetech Solutions",
       "location": "Karachi, Pakistan",
-      "logo": "https://www.genetechsolutions.com//public/frontend/images/logo.png",
+      "logo": "assets/icons/genetech.svg",
       "role": "Designed and developed 2 web applications from scratch using React and its ecosystem. Coordinated directly with the founding team to plan the roadmap and prioritize feature development. Participated in sprint planning and agile ceremonies to deliver features in iterative cycles."
     },
     {
@@ -225,7 +225,7 @@ Our innovative and tailored clothing recovery programs not only reduce waste, bu
       "type" : "On-site",
       "organization" : "Genetech Solutions",
       "location": "Karachi, Pakistan",
-      "logo": "https://www.genetechsolutions.com//public/frontend/images/logo.png",
+      "logo": "assets/icons/genetech.svg",
       "role": "Designed and developed 2 web applications from scratch using React and its ecosystem. Coordinated directly with the founding team to plan the roadmap and prioritize feature development. Participated in sprint planning and agile ceremonies to deliver features in iterative cycles."
     },
     {
@@ -235,7 +235,7 @@ Our innovative and tailored clothing recovery programs not only reduce waste, bu
       "type" : "On-site",
       "organization" : "Genetech Solutions",
       "location": "Karachi, Pakistan",
-      "logo": "https://www.genetechsolutions.com//public/frontend/images/logo.png",
+      "logo": "assets/icons/genetech.svg",
       "role": "Transforming high-quality Figma designs into responsive web pages using React and it's ecosystem. Integrated with backend APIs and services to fetch and manage data effectively. Stayed updated with industry trends and best practices to drive innovation and product excellence."
     }
   ],

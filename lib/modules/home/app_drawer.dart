@@ -8,7 +8,7 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: const Color(0xFF1D1D1D), // Dark background color
+        color: Theme.of(context).scaffoldBackgroundColor, // Dark background color
         child: Column(
           children: [
             // Drawer Header with Profile
@@ -16,6 +16,7 @@ class CustomDrawer extends StatelessWidget {
               accountName: Text(
                 '<Faizan Darwesh>',
                 style: TextStyle(
+                    color: Color(0xFF6750A4),
                     fontSize: 24,
                     fontFamily: 'Agustina',
                     fontWeight: FontWeight.w700),
@@ -30,12 +31,11 @@ class CustomDrawer extends StatelessWidget {
             ),
             // Drawer Menu Items
             ListTile(
-              leading: const Icon(Icons.home, color: Colors.white),
+              leading: const Icon(Icons.home,),
               title: const Text(
                 'Home',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.white,
                   fontFamily: 'Poppins',
                 ),
               ),
@@ -44,12 +44,11 @@ class CustomDrawer extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.privacy_tip_outlined, color: Colors.white),
+              leading: const Icon(Icons.privacy_tip_outlined,),
               title: const Text(
                 'Privacy Policy',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.white,
                   fontFamily: 'Poppins',
                 ),
               ),
@@ -62,12 +61,11 @@ class CustomDrawer extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.settings, color: Colors.white),
+              leading: const Icon(Icons.settings,),
               title: const Text(
                 'Settings',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.white,
                   fontFamily: 'Poppins',
                 ),
               ),
