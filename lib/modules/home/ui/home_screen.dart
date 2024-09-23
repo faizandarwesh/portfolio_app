@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      drawer: const AppDrawer(),
+      drawer: const CustomDrawer(),
       appBar: AppBar(
         leading: IconButton(
             onPressed: () {

@@ -1,55 +1,83 @@
 import 'package:flutter/material.dart';
 import '../privacy-policy/ui/privacy_policy.dart';
 
-class AppDrawer extends StatelessWidget {
-  const AppDrawer({super.key});
+class CustomDrawer extends StatelessWidget {
+  const CustomDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          const DrawerHeader(
-            child: Center(
-              child: Text(
-                'FD',
+      child: Container(
+        color: const Color(0xFF1D1D1D), // Dark background color
+        child: Column(
+          children: [
+            // Drawer Header with Profile
+            const UserAccountsDrawerHeader(
+              accountName: Text(
+                '<Faizan Darwesh>',
                 style: TextStyle(
                     fontSize: 24,
                     fontFamily: 'Agustina',
                     fontWeight: FontWeight.w700),
               ),
-            ),
-          ),
-          ListTile(
-            title: InkWell(
-              borderRadius: BorderRadius.circular(5.0),
-              child: const  Padding(
-                padding: EdgeInsets.all(20.0),
-                child: Row(
-                  children: [
-                    Icon(Icons.privacy_tip),
-                    SizedBox(width: 20,),
-                    Text(
-                      'Privacy Policy',
-                      style: TextStyle(
-                          fontSize: 18,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.w500),
-                    ),
-                  ],
-                ),
+              accountEmail: null,
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: AssetImage('assets/images/intro_thumbnail.png'), // Profile Image
+              ),
+              decoration: BoxDecoration(
+                color: Colors.transparent, // No background color
               ),
             ),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const PrivacyPolicy()));
-            },
-          ),
-        ],
+
+            // Drawer Menu Items
+            ListTile(
+              leading: const Icon(Icons.home, color: Colors.white),
+              title: const Text(
+                'Home',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: 'Poppins',
+                ),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.privacy_tip_outlined, color: Colors.white),
+              title: const Text(
+                'Privacy Policy',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: 'Poppins',
+                ),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const PrivacyPolicy()));
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.settings, color: Colors.white),
+              title: const Text(
+                'Settings',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontFamily: 'Poppins',
+                ),
+              ),
+              onTap: () {
+              },
+            ),
+
+          ],
+        ),
       ),
     );
   }
