@@ -1,3 +1,5 @@
+<img src="screenshots/banner.jpeg" alt="Project Listing Screen">
+
 # Portfolio App
 
 Welcome to the Portfolio App! This project showcases my skills, projects, and achievements. It is built using Flutter and supports multiple platforms, including Android, iOS, and the web. The app features a clean and modern design with support for both dark and light modes.
@@ -58,18 +60,31 @@ Welcome to the Portfolio App! This project showcases my skills, projects, and ac
 
 ## Screenshots
 
+### iOS
 <p align="center">
-  <img src="screenshots/home.png" alt="Home Screen" width="30%" style="margin-right: 10px;">
-  <img src="screenshots/project1.png" alt="Project Listing Screen" width="30%" style="margin-right: 10px;">
-  <img src="screenshots/project2.png" alt="Project Listing Screen" width="30%" style="margin-right: 10px;">
+  <img src="screenshots/ios/portfolio1.jpeg" alt="Project Listing Screen" width="18%">
+  <img src="screenshots/ios/portfolio2.jpeg" alt="Project Listing Screen" width="18%">
+     <img src="screenshots/ios/portfolio3.jpeg" alt="Project Listing Screen" width="18%">
+     <img src="screenshots/ios/portfolio4.jpeg" alt="Project Listing Screen" width="18%">
+     <img src="screenshots/ios/portfolio5.jpeg" alt="Project Listing Screen" width="18%">
+ 
+ 
+</p>
+
+### Android
+<p align="center">
+  <img src="screenshots/android/portfolio1.jpeg" alt="Project Listing Screen" width="18%">
+  <img src="screenshots/android/portfolio2.jpeg" alt="Project Listing Screen" width="18%">
+     <img src="screenshots/android/portfolio3.jpeg" alt="Project Listing Screen" width="18%">
+     <img src="screenshots/android/portfolio4.jpeg" alt="Project Listing Screen" width="18%">
+     <img src="screenshots/android/portfolio5.jpeg" alt="Project Listing Screen" width="18%">
+ 
  
 </p>
 
 <!--![Dark Mode](screenshots/dark_mode.png)
 ![Light Mode](screenshots/light_mode.png)
 -->
-COMING SOON!
-
 ## Demo
 
 <!--! Check out the app in action: [Watch Demo](https://www.youtube.com/watch?v=yourvideolink) --->
